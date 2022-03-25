@@ -1,4 +1,4 @@
-package com.lemon;
+package com.lemon.sales;
 
 public class SilverCustomer extends Customer{
     public SilverCustomer(String id,int amount){

@@ -1,4 +1,4 @@
-package com.lemon;
+package com.lemon.sales;
 
 public class SalesTester {
     public static void main(String[] args) {

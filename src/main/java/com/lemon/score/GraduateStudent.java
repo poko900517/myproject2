@@ -1,4 +1,4 @@
-package com.lemon;
+package com.lemon.score;
 
 public class GraduateStudent extends Student {
         int thesis;

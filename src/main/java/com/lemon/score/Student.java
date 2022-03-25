@@ -1,4 +1,4 @@
-package com.lemon;
+package com.lemon.score;
 
 public class Student {
     String name;

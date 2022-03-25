@@ -1,4 +1,4 @@
-package com.lemon;
+package com.lemon.score;
 
 public class Scoring {
     public static void main(String[] args) {
