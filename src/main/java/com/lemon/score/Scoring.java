@@ -5,11 +5,12 @@ import java.util.List;
 
 public class Scoring {
     public static void main(String[] args) {
-        List<Scoring> scorings = new ArrayList<>();
-        scorings.add(new Scoring("Larry",80));
-        scorings.add(new Scoring("Cindy",90);
-        scorings.add(new Scoring("lemon",100);
-
-        for ()
+        List<Student> students = new ArrayList<>();
+        students.add(new Student("Larry",80,50));
+        students.add(new Student("Cindy",90,60));
+        students.add(new GraduateStudent("lemon",100,70,50));
+        for (Student stu : students){
+            stu.print();
+        }
     }
 }
