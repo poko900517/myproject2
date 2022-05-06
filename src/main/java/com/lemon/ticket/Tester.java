@@ -37,5 +37,7 @@ public class Tester {
                 endStation = Station.KAOHSIUNG;
                 break;
         }
+        Ticket t = new Ticket(startstaion,endStation);
+        System.out.println(t.price);
     }
 }
