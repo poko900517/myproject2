@@ -16,12 +16,9 @@ public class MainWindow {
         frame.setLocation(200,200);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         JButton button = new JButton("ok");
-        button.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.out.println("hahaha");
-            }
-        });
+        //匿名類別 Annoymous class
+        MyActionListener listener = new MyActionListener();
+        button.addActionListener(listener);
         frame.setLayout(new FlowLayout());
         frame.add(button);
         frame.add(new JButton("Testing"));
