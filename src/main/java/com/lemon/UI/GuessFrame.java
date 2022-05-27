@@ -8,14 +8,15 @@ import java.awt.event.ActionListener;
 public class GuessFrame extends JFrame {
 
     //Fields
+    JButton button = new JButton("hi");
     //Construtors
     public GuessFrame() {
         super();
         setSize(600, 400);
         setLocation(300, 200);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        JButton button = new JButton("hi");
-        JLabel label = new JLabel("Hello!!");
+
+        JLabel label = new JLabel("ZZZZ");
         button.addActionListener((new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -23,7 +24,7 @@ public class GuessFrame extends JFrame {
                 label.setText("Hello!");
             }
         }));
-        //JLabel label = new JLabel("Zzzzz....");
+        label.setText("aaa");
         setLayout(new FlowLayout());
         add(label);
         add(button);
