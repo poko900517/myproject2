@@ -17,8 +17,14 @@ public class MainWindow {
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         JButton button = new JButton("ok");
         //匿名類別 Annoymous class
-        MyActionListener listener = new MyActionListener();
-        button.addActionListener(listener);
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Hello world!");
+            }
+        });
+        //MyActionListener listener = new MyActionListener();
+        //button.addActionListener(listener);
         frame.setLayout(new FlowLayout());
         frame.add(button);
         frame.add(new JButton("Testing"));
