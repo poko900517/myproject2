@@ -18,9 +18,9 @@ public class Student implements Printable{
     }
     @Override
     public void print(){
-        System.out.print(name+"\t"+english+"\t"+math+"\t"+average);
+        System.out.print(name+"\t"+english+"\t"+math+"\t"+getAverage());
         if (average<60){
-            System.out.println("#");
+            System.out.println("*");
         }
         System.out.println();
     }
